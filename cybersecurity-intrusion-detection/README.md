@@ -69,28 +69,24 @@ notebooks/intrusiondetection.ipynb
 
 ## How To Run
 
-From the outer project folder:
+From the `cybersecurity-intrusion-detection` folder:
 
 ```bash
-cd /Users/zekoosmani/Cybersecurity-Intrusion-Detection
-source venv/bin/activate
-python -m pip install -r cybersecurity-intrusion-detection/requirements.txt
-python -m pip install notebook jupyter
-cd cybersecurity-intrusion-detection
-python -m notebook
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+jupyter lab notebooks/intrusiondetection.ipynb
 ```
 
-Then open:
+Alternatively, start Jupyter Lab and open:
 
 ```text
-notebooks/intrusiondetection.ipynb
+jupyter lab
 ```
 
 Notes:
 
-
-- Do not run `source venv/bin/activate` from inside the `notebooks` folder unless the path points back to the real virtual environment.
-- If Jupyter prints a `localhost:8888` link with a token, copy that full link into the browser.
+- If Jupyter prints a `localhost` link with a token, open that full link in your browser.
 
 ## Tools And Libraries
 
